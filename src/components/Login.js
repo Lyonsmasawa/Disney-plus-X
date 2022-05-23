@@ -84,7 +84,7 @@ const Login = () => {
         <Container>
             <Content>
                 <CallToAction>
-                    <Logo src="/images/cta-logo-one.svg"/>
+                    <Logo src="https://cnbl-cdn.bamgrid.com/assets/73855ecdad3fbc99c89bb2c1d21be651b543ff1fc2371c8dddfe146629e2bea0/original"/>
                     <SignUp>GET THE DISNEY BUNDLE</SignUp>
                     <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now. <a href="" style={{textDecoration: "underline",}}>Terms Apply</a> </p>
                     <ImageOne src="https://cnbl-cdn.bamgrid.com/assets/8349a1f652e69bf1c3685a888092435110056a55e27b4eac3289e10fcb232978/original"></ImageOne>
