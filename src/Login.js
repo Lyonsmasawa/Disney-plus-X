@@ -2,9 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Login = () => {
-    <Container>
-        <Content>Center</Content>
-    </Container>
+    return(
+        <Container>
+            <Content>Center</Content>
+        </Container>
+    )
 }
-    const Container = styled
+const Container = styled.section`
+    display: flex;
+    overflow:hidden;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    `
+
+const Content = styled.div`
+    margin-bottom: 10vw;
+    width: 100%;
+    
+`
+
 export default Login
