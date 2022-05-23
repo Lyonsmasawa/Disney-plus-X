@@ -16,9 +16,9 @@ const Content = styled.div`
     min-height: 100vh;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 80px, 40px;
     height: 100%;
 `;
@@ -46,7 +46,7 @@ const CallToAction = styled.div`
     margin-bottom: 2vw;
     max-width: 650px;
     transition-timing-function: ease-out;
-    transition: opacity 0.2;
+    transition: opacity 0.2s;
     width: 100%;
 `;
 
