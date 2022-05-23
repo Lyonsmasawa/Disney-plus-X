@@ -64,6 +64,7 @@ const Login = () => {
             <Content>
                 <CallToAction>
                     <Logo src="/images/cta-logo-one.svg"/>
+                    <SignUp>GET ALL THERE</SignUp>
                 </CallToAction>
                 <BgImage/>
             </Content>
