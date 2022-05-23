@@ -36,7 +36,15 @@ const BgImage = styled.div`
     z-index: -1;
 `
 const CallToAction = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2vw;
+    max-width: 650px;
 `;
 
 const Logo = styled.img`
