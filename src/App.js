@@ -1,9 +1,12 @@
+import { Router } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Try</h1>
+      <Router>
+        
+      </Router>
     </div>
   );
 }
