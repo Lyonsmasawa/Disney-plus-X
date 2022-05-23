@@ -35,13 +35,19 @@ const BgImage = styled.div`
     left: 0;
     z-index: -1;
 `
+const CallToAction = styled.div`
 
+`
+
+const Logo = styled.img`
+
+`
 
 const Login = () => {
     return(
         <Container>
             <CallToAction>
-                <Logo src="/images/cta-logo-one.png"/>
+                <Logo src="/images/cta-logo-one.svg"/>
             </CallToAction>
             <Content><BgImage/></Content>
         </Container>
