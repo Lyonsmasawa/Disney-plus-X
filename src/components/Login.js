@@ -25,7 +25,7 @@ const Content = styled.div`
 
 const BgImage = styled.div`
     height: 100%;
-    background-image: url("/images/login-background.jpg");
+    background-image: url("https://cnbl-cdn.bamgrid.com/assets/69cacf722b10df9682a3a747d00b50dd71b76ae3990fd7ed01b063e695b6b0b7/original");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -75,13 +75,18 @@ const SignUp = styled.a`
     }
 `
 
+const ImageOne = styled.img`
+  
+`
+
 const Login = () => {
     return(
         <Container>
             <Content>
                 <CallToAction>
                     <Logo src="/images/cta-logo-one.svg"/>
-                    <SignUp>GET ALL THERE</SignUp>
+                    <SignUp>GET THE DISNEY BUNDLE</SignUp>
+                    <imageOne src="https://cnbl-cdn.bamgrid.com/assets/8349a1f652e69bf1c3685a888092435110056a55e27b4eac3289e10fcb232978/original"></imageOne>
                 </CallToAction>
                 <BgImage/>
             </Content>
