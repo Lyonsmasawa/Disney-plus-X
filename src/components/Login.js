@@ -36,7 +36,7 @@ const BgImage = styled.div`
     z-index: -1;
 `
 const CallToAction = styled.div`
-
+    margin-bottom: 2vw;
 `;
 
 const Logo = styled.img`
