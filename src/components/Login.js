@@ -24,7 +24,16 @@ const Content = styled.div`
 `;
 
 const BgImage = styled.div`
-    background-image: url("/images/login-background.jpg);
+    height: 100%;
+    background-image: url("/images/login-background.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
 `
 const Login = () => {
     return(
