@@ -1,12 +1,13 @@
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './Login';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route />
+          <Route path="/" element={ <Login /> }></Route>
         </Routes>
       </Router>
     </div>
