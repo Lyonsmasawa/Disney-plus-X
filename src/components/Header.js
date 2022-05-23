@@ -22,6 +22,11 @@ const Logo = styled.a`
     max-height: 70px;
     font-size: 0;
     display: inline-block;
+
+    img {
+        display: block;
+        width: 100%;
+    }
 `
  
  const Header = () => {
