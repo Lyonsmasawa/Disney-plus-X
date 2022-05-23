@@ -14,6 +14,15 @@ const Nav = styled.nav`
     leter-spacing: 16px;
     z-index: 1001;
 `
+
+const Logo = styled.a`
+    padding: 0;
+    width: 80px;
+    margin-top: 4px;
+    max-height: 70px;
+    font-size: 0;
+    display: inline-block;
+`
  
  const Header = () => {
    return (
