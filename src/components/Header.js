@@ -39,6 +39,11 @@ const NavMenu = styled.div`
     position: relative;
     padding: 0px;
     margin-right: auto;    
+    margin-left: 25px;
+
+    @media(max-width: 768px){
+        display: none;
+    }
 `
 
  const Header = () => {
