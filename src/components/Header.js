@@ -28,13 +28,26 @@ const Logo = styled.a`
         width: 100%;
     }
 `
- 
+
+const NavMenu = styled.div`
+    display: flex;
+    align-items: center;
+    flex-flow: row no-wrap;
+    justify-content: flex-end;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    padding: 0px;
+    margin-right: auto;    
+`
+
  const Header = () => {
    return (
      <Nav>
         <Logo>
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
+        <NavMenu>MENU</NavMenu>
     </Nav>
    )
  }
