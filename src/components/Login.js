@@ -23,10 +23,13 @@ const Content = styled.div`
     height: 100%;
 `;
 
+const BgImage = styled.div`
+    background-image: url("/images/login-background.jpg);
+`
 const Login = () => {
     return(
         <Container>
-            <Content>Center</Content>
+            <Content><BgImage/></Content>
         </Container>
     )
 }
