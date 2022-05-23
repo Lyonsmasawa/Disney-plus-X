@@ -78,12 +78,14 @@ const SignUp = styled.a`
 `;
 
 const ImageOne = styled.img`
-    margin-top: 14px;
+    
     max-width: 640px;
 `;
 
 const SignUpLink = styled.a`
-
+    margin-top: 30px;
+    text-decoration: underline;
+    font-size: 17px;
 `
 
 const Login = () => {
@@ -93,7 +95,7 @@ const Login = () => {
                 <CallToAction>
                     <Logo src="https://cnbl-cdn.bamgrid.com/assets/73855ecdad3fbc99c89bb2c1d21be651b543ff1fc2371c8dddfe146629e2bea0/original"/>
                     <SignUp>GET THE DISNEY BUNDLE</SignUp>
-                    <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now. <a href="" style={{textDecoration: "underline",}}>Terms Apply</a> </p>
+                    <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now. <a style={{textDecoration: "underline",}}>Terms Apply</a> </p>
                     <ImageOne src="https://cnbl-cdn.bamgrid.com/assets/8349a1f652e69bf1c3685a888092435110056a55e27b4eac3289e10fcb232978/original"></ImageOne>
                     <SignUpLink><Link to="">Sign up for Disney+ only</Link></SignUpLink>
                 </CallToAction>
