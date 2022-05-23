@@ -37,19 +37,25 @@ const BgImage = styled.div`
 `
 const CallToAction = styled.div`
 
-`
+`;
 
 const Logo = styled.img`
-
-`
+    max-width: 600px;
+    min-height: 100px;
+    display:block;
+    width: 100%;
+    margin-bottom: 12px;
+`;
 
 const Login = () => {
     return(
         <Container>
-            <CallToAction>
-                <Logo src="/images/cta-logo-one.svg"/>
-            </CallToAction>
-            <Content><BgImage/></Content>
+            <Content>
+                <CallToAction>
+                    <Logo src="/images/cta-logo-one.svg"/>
+                </CallToAction>
+                <BgImage/>
+            </Content>
         </Container>
     )
 }
