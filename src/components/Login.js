@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const Container = styled.section`
@@ -39,6 +40,7 @@ const CallToAction = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 0;
     text-align: center;
     margin-left: auto;
@@ -51,7 +53,7 @@ const CallToAction = styled.div`
 `;
 
 const Logo = styled.img`
-    max-width: 600px;
+    max-width: 640px;
     min-height: 100px;
     display:block;
     width: 100%;
@@ -73,10 +75,15 @@ const SignUp = styled.a`
     &:hover {
         background-color: #0483ee;
     }
-`
+`;
 
 const ImageOne = styled.img`
     margin-top: 14px;
+    max-width: 640px;
+`;
+
+const SignUpLink = styled.a`
+
 `
 
 const Login = () => {
@@ -88,6 +95,7 @@ const Login = () => {
                     <SignUp>GET THE DISNEY BUNDLE</SignUp>
                     <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now. <a href="" style={{textDecoration: "underline",}}>Terms Apply</a> </p>
                     <ImageOne src="https://cnbl-cdn.bamgrid.com/assets/8349a1f652e69bf1c3685a888092435110056a55e27b4eac3289e10fcb232978/original"></ImageOne>
+                    <SignUpLink><Link to="">Sign up for Disney+ only</Link></SignUpLink>
                 </CallToAction>
                 <BgImage/>
             </Content>
