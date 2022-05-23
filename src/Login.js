@@ -14,12 +14,17 @@ const Container = styled.section`
     flex-direction: column;
     height: 100vh;
     text-align: center;
-    `
+`;
 
 const Content = styled.div`
     margin-bottom: 10vw;
     width: 100%;
-    
-`
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
 
 export default Login
