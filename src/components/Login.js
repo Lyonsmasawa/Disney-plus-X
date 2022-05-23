@@ -59,7 +59,7 @@ const Logo = styled.img`
 `;
 
 const SignUp = styled.a`
-    font-weight: bold;
+    font-weight: 400;
     color: #f9f9f9;
     background-color: #0063e5;
     margin-bottom: 12px;
@@ -86,7 +86,7 @@ const Login = () => {
                 <CallToAction>
                     <Logo src="/images/cta-logo-one.svg"/>
                     <SignUp>GET THE DISNEY BUNDLE</SignUp>
-                    <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now  <a href="" style={{textDecoration: "underline",}}>Terms Apply</a> </p>
+                    <p style={{fontSize: 12, paddingBottom: 10, paddingTop: 10,}}>Stream Now. <a href="" style={{textDecoration: "underline",}}>Terms Apply</a> </p>
                     <ImageOne src="https://cnbl-cdn.bamgrid.com/assets/8349a1f652e69bf1c3685a888092435110056a55e27b4eac3289e10fcb232978/original"></ImageOne>
                 </CallToAction>
                 <BgImage/>
