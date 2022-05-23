@@ -45,6 +45,9 @@ const CallToAction = styled.div`
     margin-right: auto;
     margin-bottom: 2vw;
     max-width: 650px;
+    transition-timing-function: ease-out;
+    transition: opacity 0.2;
+    width: 100%;
 `;
 
 const Logo = styled.img`
