@@ -1,8 +1,12 @@
 import styled from "styled-components"
+
+const Nav = styled.nav`
+    
+`
  
  const Header = () => {
    return (
-     <div>Header</div>
+     <Nav>Header</Nav>
    )
  }
  
