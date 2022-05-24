@@ -8,7 +8,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 60px;
     top: 0;
     left: 0;
     right: 0;
@@ -21,7 +21,7 @@ const Logo = styled.a`
     padding: 0;
     width: 80px;
     margin-top: 4px;
-    max-height: 70px;
+    max-height: 60px;
     font-size: 0;
     display: inline-block;
 
