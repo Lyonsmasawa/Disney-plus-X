@@ -43,6 +43,38 @@ const NavMenu = styled.div`
     margin-right: auto;    
     margin-left: 25px;
 
+    span {
+        color: rgb(249, 249, 249);
+        font-size: 13px;
+        letter-spacing: 1.08px;
+        padding: 2px 0px;
+        white-space: nowrap;
+        position: relative; 
+
+        
+        &:before {
+            content: "";
+            background-color: rgb(249, 249, 249);
+            border-radius: 0 0 4px 4px;
+            bottom: -6px;
+            height: 2px;
+            opacity: 0;
+            position: absolute;
+            right: 0px;
+            transform-origin: left center;
+            transform: scale(0);
+            transition: all 25oms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+            visibility: hidden;
+            width: auto;
+        }
+    }
+    &:hover {
+        span:before {
+            
+        }
+    }
+
+
     @media(max-width: 768px){
         display: none;
     }
@@ -51,13 +83,14 @@ const NavMenu = styled.div`
 const MenuLinks = {
     display: "flex", 
     alignItems: "center",
-    padding: "0 12px", 
+    padding: "0 12px",
 }
 
 const  HomeIcon ={
     maxWidth: "20px",
     width: "20px",
     height: "20px",
+    zIndex: "auto",
 }
 
 
@@ -68,7 +101,7 @@ const  HomeIcon ={
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
         <NavMenu>
-            <Link to="/home" style={MenuLinks}><HomeOutlined style={HomeIcon} />HOME</Link>
+            <Link to="/home" style={MenuLinks}><HomeOutlined style={HomeIcon} /><span>HOME</span></Link>
         </NavMenu>
     </Nav>
    )
