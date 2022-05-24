@@ -56,8 +56,7 @@ const NavMenu = styled.div`
         &:before {
             content: "";
             background-color: rgb(249, 249, 249);
-            border-radius: 0 0 4px 4px;
-            bottom: -5px;
+            bottom: -3px;
             height: 2px;
             left: 0px;
             opacity: 0;
