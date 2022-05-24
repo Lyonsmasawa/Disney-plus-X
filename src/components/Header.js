@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
+import HomeIcon from '@material-ui/icons/Home';
 
 const Nav = styled.nav`
     position: fixed;
@@ -52,7 +54,9 @@ const NavMenu = styled.div`
         <Logo>
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
-        <NavMenu>MENU</NavMenu>
+        <NavMenu>
+            <Link to="/home"><HomeIcon/> HOME</Link>
+        </NavMenu>
     </Nav>
    )
  }
