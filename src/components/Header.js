@@ -68,9 +68,12 @@ const NavMenu = styled.div`
             width: auto;
         }
     }
+    
     &:hover {
         span:before {
-            
+            transform: scale(1);
+            visibility: visible;
+            opacity: 1 !important;
         }
     }
 
