@@ -47,7 +47,7 @@ const NavMenu = styled.div`
         color: rgb(249, 249, 249);
         font-size: 16px;
         font-weight: bold;
-        letter-spacing: 1.08px;
+        letter-spacing: 1.8px;
         padding: 2px 0px;
         white-space: nowrap;
         position: relative; 
