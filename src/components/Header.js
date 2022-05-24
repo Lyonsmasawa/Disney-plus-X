@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import Home from '@material-ui/icons/';
+import { HomeOutlined } from '@material-ui/icons/';
 
 const Nav = styled.nav`
     position: fixed;
@@ -48,6 +48,12 @@ const NavMenu = styled.div`
     }
 `
 
+const MenuLinks = {
+    display: "flex", 
+    alignItems: "center",
+    padding: "0 12px", 
+}
+
  const Header = () => {
    return (
      <Nav>
@@ -55,7 +61,7 @@ const NavMenu = styled.div`
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
         <NavMenu>
-            <Link to="/home"><Home/> HOME</Link>
+            <Link to="/home" style={MenuLinks}><HomeOutlined />HOME</Link>
         </NavMenu>
     </Nav>
    )
