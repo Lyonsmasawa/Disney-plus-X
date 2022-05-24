@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
+import { keyframes } from "styled-components";
 
 const Nav = styled.nav`
     position: fixed;
@@ -111,6 +112,25 @@ const Login = styled.a`
     }
 `
 
+// Create the keyframes
+const rotate = keyframes `
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+// Here we create a component that will rotate everything we pass in over two seconds
+const Rotate = styled.div`
+  display: inline-block;
+  animation: ${rotate} 2s linear infinite;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+`;
+
  const Header = () => {
    return (
      <Nav>
@@ -125,6 +145,7 @@ const Login = styled.a`
             <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><span>MOVIES</span></Link>
             <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><span>SERIES</span></Link>
         </NavMenu>
+        <Rotate>&lt;💅🏾&gt;</Rotate>
         <Login>Log in</Login>
     </Nav>
    )
