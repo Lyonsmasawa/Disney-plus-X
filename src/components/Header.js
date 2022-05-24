@@ -4,7 +4,7 @@ import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 
 const Nav = styled.nav`
     position: fixed;
-    background-color: #090b13;
+    background-color: rgba(9, 11, 19, .6);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
     left: 0;
     right: 0;
     padding: 0 36px;
-    leter-spacing: 16px;
+    letter-spacing: 16px;
     z-index: 1001;
 `
 
@@ -45,8 +45,8 @@ const NavMenu = styled.div`
 
     span {
         color: rgb(249, 249, 249);
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 600;
         letter-spacing: 1.8px;
         padding: 2px 0px;
         white-space: nowrap;
