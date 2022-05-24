@@ -162,16 +162,20 @@ const Rotate = styled.div`
         <Logo>
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
-        <NavMenu>
-            <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><Span>HOME</Span></Link>
-            <Link to="/home" style={MenuLinks}><Search style={MenuIcon} /><Span>SEARCH</Span></Link>
-            <Link to="/home" style={MenuLinks}><Add style={MenuIcon} /><Span>WATCHLIST</Span></Link>
-            <Link to="/home" style={MenuLinks}><Star style={MenuIcon} /><Span>ORIGINALS</Span></Link>
-            <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><Span>MOVIES</Span></Link>
-            <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
-        </NavMenu>
-        <Rotate>.</Rotate>
-        <Login onClick={handleAuth}>Log in</Login>
+
+        {!username ? <Login onClick={handleAuth}>Log in</Login> : 
+            <div>
+                <NavMenu>
+                    <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><Span>HOME</Span></Link>
+                    <Link to="/home" style={MenuLinks}><Search style={MenuIcon} /><Span>SEARCH</Span></Link>
+                    <Link to="/home" style={MenuLinks}><Add style={MenuIcon} /><Span>WATCHLIST</Span></Link>
+                    <Link to="/home" style={MenuLinks}><Star style={MenuIcon} /><Span>ORIGINALS</Span></Link>
+                    <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><Span>MOVIES</Span></Link>
+                    <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
+                </NavMenu>
+                <Rotate>.</Rotate>
+            </div>
+        }
     </Nav>
    )
  }
