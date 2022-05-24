@@ -103,6 +103,12 @@ const Login = styled.a`
     border: 1px solid #f9f9f9;
     border-radius: 4px;
     letter-spacing: 1.5px;
+    transition: all 0.2s ease 0s;
+
+    &:hover{
+        background-color: #f9f9f9;
+        color: black;
+    }
 `
 
  const Header = () => {
@@ -119,7 +125,7 @@ const Login = styled.a`
             <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><span>MOVIES</span></Link>
             <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><span>SERIES</span></Link>
         </NavMenu>
-        <Login>Login</Login>
+        <Login>Log in</Login>
     </Nav>
    )
  }
