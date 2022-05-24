@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import styled from "styled-components"
 import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 import { keyframes } from "styled-components";
 import { auth, provider } from "../Firebase";
 import { useSelector, useDispatch } from 'react-redux'
-import { setUserLoginDetails, setSignOutState } from '../features/user/userSlice.js'
+import { setUserLoginDetails, setSignOutState, selectUserName, selectUserPhoto } from '../features/user/userSlice.js'
 
 const Nav = styled.nav`
     position: fixed;
@@ -135,6 +135,11 @@ const Rotate = styled.div`
 `;
 
  const Header = () => {
+     const dispatch = useDispatch();
+     const navigate = useNavigate();
+     const username = useSelector(selectUserName);
+     const userPhoto = useSelector(selectUserPhoto);
+
 
     const handleAuth = () => {
         auth.signInWithPopup(provider).then((result) => {
