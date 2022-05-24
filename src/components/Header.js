@@ -56,22 +56,23 @@ const NavMenu = styled.div`
             content: "";
             background-color: rgb(249, 249, 249);
             border-radius: 0 0 4px 4px;
-            bottom: -6px;
+            bottom: -5px;
             height: 2px;
+            left: 0px;
             opacity: 0;
             position: absolute;
             right: 0px;
             transform-origin: left center;
-            transform: scale(0);
-            transition: all 25oms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+            transform: scaleX(0);
+            transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
             visibility: hidden;
             width: auto;
         }
     }
-    
+
     &:hover {
         span:before {
-            transform: scale(1);
+            transform: scaleX(1);
             visibility: visible;
             opacity: 1 !important;
         }
