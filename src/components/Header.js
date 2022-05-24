@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 import { keyframes } from "styled-components";
 import { auth, provider } from "../Firebase";
+import { useSelector, useDispatch } from 'react-redux'
+import { setUserLoginDetails, setSignOutState } from '../features/user/userSlice.js'
 
 const Nav = styled.nav`
     position: fixed;
