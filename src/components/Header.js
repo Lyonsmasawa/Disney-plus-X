@@ -54,6 +54,13 @@ const MenuLinks = {
     padding: "0 12px", 
 }
 
+const  HomeIcon ={
+    maxWidth: "20px",
+    width: "20px",
+    height: "20px",
+}
+
+
  const Header = () => {
    return (
      <Nav>
@@ -61,7 +68,7 @@ const MenuLinks = {
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
         <NavMenu>
-            <Link to="/home" style={MenuLinks}><HomeOutlined />HOME</Link>
+            <Link to="/home" style={MenuLinks}><HomeOutlined style={HomeIcon} />HOME</Link>
         </NavMenu>
     </Nav>
    )
