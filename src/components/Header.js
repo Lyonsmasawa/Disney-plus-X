@@ -126,9 +126,11 @@ const rotate = keyframes `
 // Here we create a component that will rotate everything we pass in over two seconds
 const Rotate = styled.div`
   display: inline-block;
-  animation: ${rotate} 2s linear infinite;
-  padding: 2rem 1rem;
-  font-size: 1.2rem;
+  animation: ${rotate} 3s linear infinite;
+  padding: 0 1.4rem;
+  font-weight: bold;
+  color: #0063e5;
+  font-size: 2rem;
 `;
 
  const Header = () => {
@@ -145,7 +147,7 @@ const Rotate = styled.div`
             <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><span>MOVIES</span></Link>
             <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><span>SERIES</span></Link>
         </NavMenu>
-        <Rotate>&lt;💅🏾&gt;</Rotate>
+        <Rotate>.</Rotate>
         <Login>Log in</Login>
     </Nav>
    )
