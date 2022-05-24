@@ -45,7 +45,8 @@ const NavMenu = styled.div`
 
     span {
         color: rgb(249, 249, 249);
-        font-size: 13px;
+        font-size: 16px;
+        font-weight: bold;
         letter-spacing: 1.08px;
         padding: 2px 0px;
         white-space: nowrap;
@@ -91,9 +92,8 @@ const MenuLinks = {
 }
 
 const  HomeIcon ={
-    maxWidth: "20px",
-    width: "20px",
-    height: "20px",
+    maxWidth: "30px",
+    maxHeight: "30px",
     zIndex: "auto",
 }
 
