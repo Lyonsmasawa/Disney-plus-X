@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { Add, AddBox, Hd, HdTwoTone, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
+import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 
 const Nav = styled.nav`
     position: fixed;
