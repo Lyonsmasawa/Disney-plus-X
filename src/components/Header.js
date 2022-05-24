@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { HomeOutlined } from '@material-ui/icons/';
+import { Add, AddBox, Hd, HdTwoTone, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 
 const Nav = styled.nav`
     position: fixed;
@@ -45,7 +45,7 @@ const NavMenu = styled.div`
 
     span {
         color: rgb(249, 249, 249);
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
         letter-spacing: 1.8px;
         padding: 2px 0px;
@@ -90,7 +90,7 @@ const MenuLinks = {
     padding: "0 12px",
 }
 
-const  HomeIcon ={
+const  MenuIcon ={
     maxWidth: "30px",
     maxHeight: "30px",
     zIndex: "auto",
@@ -104,7 +104,12 @@ const  HomeIcon ={
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
         <NavMenu>
-            <Link to="/home" style={MenuLinks}><HomeOutlined style={HomeIcon} /><span>HOME</span></Link>
+            <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><span>HOME</span></Link>
+            <Link to="/home" style={MenuLinks}><Search style={MenuIcon} /><span>SEARCH</span></Link>
+            <Link to="/home" style={MenuLinks}><Add style={MenuIcon} /><span>WATCHLIST</span></Link>
+            <Link to="/home" style={MenuLinks}><Star style={MenuIcon} /><span>ORIGINALS</span></Link>
+            <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><span>MOVIES</span></Link>
+            <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><span>SERIES</span></Link>
         </NavMenu>
     </Nav>
    )
