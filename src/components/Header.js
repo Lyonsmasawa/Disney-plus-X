@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 import { keyframes } from "styled-components";
+import { auth, provider } from "../Firebase";
 
 const Nav = styled.nav`
     position: fixed;
@@ -132,6 +133,13 @@ const Rotate = styled.div`
 `;
 
  const Header = () => {
+
+    const handleAuth = () => {
+        auth.signInWithPopup(provider).then((result) => {
+            console.log(result)
+        } ).catch( error => {alert(error.message)})
+    }
+
    return (
      <Nav>
         <Logo>
@@ -146,7 +154,7 @@ const Rotate = styled.div`
             <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
         </NavMenu>
         <Rotate>.</Rotate>
-        <Login>Log in</Login>
+        <Login onClick={handleAuth}>Log in</Login>
     </Nav>
    )
  }
