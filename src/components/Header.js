@@ -134,16 +134,21 @@ const Rotate = styled.div`
   font-size: 2rem;
 `;
 
+const UserImage = styled.img`
+  height: 100%;
+`
+
  const Header = () => {
      const dispatch = useDispatch();
      const navigate = useNavigate();
-     const username = useSelector(selectUserName);
+     const userName = useSelector(selectUserName);
      const userPhoto = useSelector(selectUserPhoto);
 
 
     const handleAuth = () => {
         auth.signInWithPopup(provider).then((result) => {
             setUser(result.user);
+            console.log(result.user)
         } ).catch( error => {alert(error.message)})
     }
 
@@ -163,9 +168,10 @@ const Rotate = styled.div`
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
 
-        {!username ? <><Rotate><AcUnit /></Rotate><Rotate><AcUnit /></Rotate><Login onClick={handleAuth}>Log in</Login></> : 
+        {!userName ? <><Rotate><AcUnit /></Rotate><Rotate><AcUnit /></Rotate><Login onClick={handleAuth}>Log in</Login></> : 
             <div>
                 <NavMenu>
+                    <Rotate><AcUnit /></Rotate>
                     <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><Span>HOME</Span></Link>
                     <Link to="/home" style={MenuLinks}><Search style={MenuIcon} /><Span>SEARCH</Span></Link>
                     <Link to="/home" style={MenuLinks}><Add style={MenuIcon} /><Span>WATCHLIST</Span></Link>
@@ -174,7 +180,7 @@ const Rotate = styled.div`
                     <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
                     <Rotate><AcUnit /></Rotate>
                 </NavMenu>
-                
+                <UserImage src={userPhoto} alt={userName} />
             </div>
         }
     </Nav>
