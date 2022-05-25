@@ -30,9 +30,13 @@ const Carousel = styled(Slider)`
 
     ul li button {
         &:before{
-            font-size: 10px;
+            font-size: 12px;
             color: gray;
         }
+    }
+
+    li.slick-active button:before{
+        color: #0063e5;
     }
 `
 
