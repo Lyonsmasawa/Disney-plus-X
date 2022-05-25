@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ImageSlider } from './ImageSlider'
+import ImageSlider from './ImageSlider'
 
 const Container = styled.main`
     position: relative;
