@@ -38,7 +38,19 @@ const Carousel = styled(Slider)`
     li.slick-active button:before{
         color: #0063e5;
     }
-`
+
+    .slick-list{
+        overflow: initial;
+    }
+
+    .slick-prev{
+        left: -75px;
+    }
+
+    .slick-next{
+        right: -75px;
+    }
+`;
 
   return (
     <Carousel {...settings}>
