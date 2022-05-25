@@ -44,25 +44,62 @@ const Carousel = styled(Slider)`
     }
 
     .slick-prev{
-        left: -75px;
+        left: -45px;
     }
 
     .slick-next{
-        right: -75px;
+        right: -45px;
     }
 `;
 
+const Wrap = styled.div`
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+
+    a{
+        border-radius: 4px;
+        box-shadow: 0 0 5px;
+        cursor: pointer;
+        display: block;
+        padding: 4px;
+
+        img{
+            width: 100%;
+            height: 1005;
+        }
+
+        &:hover {
+            padding:0;
+            border: 4px solid #0063e5;
+            transition-duration: 300ms;
+        }
+    }
+`
+
   return (
     <Carousel {...settings}>
-        <div>
-            <h1>1</h1>
-        </div>
-        <div>
-            <h1>2</h1>
-        </div>
-        <div>
-            <h1>3</h1>
-        </div>
+        <Wrap>
+            <a>
+                <img src="/images/slider-badging.jpg" alt="" />
+            </a>
+        </Wrap>
+        <Wrap>
+            <a>
+                <img src="/images/slider-scale.jpg" alt="" />
+            </a>
+        </Wrap>
+        <Wrap>
+            <a>
+                <img src="/images/slider-badag.jpg" alt="" />
+            </a>
+        </Wrap>
+        <Wrap>
+            <a>
+                <img src="/images/slider-scales.jpg" alt="" />
+            </a>
+        </Wrap>
     </Carousel>
   )
 }
