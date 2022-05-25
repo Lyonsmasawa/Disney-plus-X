@@ -16,8 +16,8 @@ const ImageSlider = () => {
 const Carousel = styled(Slider)`
     margin-top: 10px;
 
-    $ > button {
-        opactiy: 0;
+    & > button {
+        opacity: 0;
     }
 `
 
