@@ -5,7 +5,6 @@ import { keyframes } from "styled-components";
 import { auth, provider } from "../Firebase";
 import { useSelector, useDispatch } from 'react-redux'
 import { setUserLoginDetails, setSignOutState, selectUserName, selectUserPhoto } from '../features/user/userSlice.js'
-import { useEffect } from "react";
 
 const Nav = styled.nav`
     position: fixed;
@@ -165,8 +164,8 @@ const SignOut = styled.div`
 
   ${UserImage} {
       border-radius: 50%;
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
       border: 2px solid #0063e5;
   }
 
