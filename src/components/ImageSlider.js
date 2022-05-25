@@ -13,8 +13,16 @@ const ImageSlider = () => {
         autoplay: true,
     };
 
+const Carousel = styled(Slider)`
+    margin-top: 10px;
+
+    $ > button {
+        opactiy: 0;
+    }
+`
+
   return (
-    <Slider {...settings}>
+    <Carousel {...settings}>
         <div>
             <h1>1</h1>
         </div>
@@ -24,7 +32,7 @@ const ImageSlider = () => {
         <div>
             <h1>3</h1>
         </div>
-    </Slider>
+    </Carousel>
   )
 }
 
