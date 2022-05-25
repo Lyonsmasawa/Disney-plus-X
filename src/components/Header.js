@@ -139,20 +139,6 @@ const UserImage = styled.img`
   height: 100%;
 `
 
-const SignOut = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-contents: center;
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-
-  ${UserImage} {
-      border-radius: 50%;
-  }
-`
-
 const DropDown = styled.div`
     position: absolute;
     top: 48px;
@@ -165,6 +151,29 @@ const DropDown = styled.div`
     border-radius: 4px;
     box-shadow: 0px 0px 8px 0px #0063e5;
     opacity: 0;
+`
+
+const SignOut = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-contents: center;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+
+  ${UserImage} {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+  }
+
+  &:hover{
+      ${DropDown} {
+          opacity: 1;
+          transition: 2s;
+      }
+  }
 `
 
  const Header = () => {
