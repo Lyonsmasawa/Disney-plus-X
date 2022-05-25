@@ -145,11 +145,12 @@ const DropDown = styled.div`
     right: 0;
     padding: 10px;
     font-size: 14px;
+    font-weight: 600;
     letter-spacing: 3px;
-    background-color: rgb(19, 19, 19);
-    border: 1px solid rgba(151, 151, 151, 0.3);
+    width: max-content;
+    background-color:  black;
     border-radius: 4px;
-    box-shadow: 0px 0px 8px 0px #0063e5;
+    box-shadow: 0px 2px 8px  #0063e5;
     opacity: 0;
 `
 
@@ -166,12 +167,13 @@ const SignOut = styled.div`
       border-radius: 50%;
       width: 100%;
       height: 100%;
+      border: 2px solid #0063e5;
   }
 
   &:hover{
       ${DropDown} {
           opacity: 1;
-          transition: 2s;
+          transition: 1s;
       }
   }
 `
