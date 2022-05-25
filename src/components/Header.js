@@ -186,11 +186,18 @@ const SignOut = styled.div`
 
 
     const handleAuth = () => {
-        auth.signInWithPopup(provider).then((result) => {
-            setUser(result.user);
-            navigate("/home");
-            console.log(result.user)
-        } ).catch( error => {alert(error.message)})
+        if (!userName) {
+            auth.signInWithPopup(provider).then((result) => {
+                setUser(result.user);
+                navigate("/home");
+                console.log(result.user)
+            } ).catch( error => {alert(error.message)})
+        } else if (userName){
+            auth.signOut().then(() => {
+                dispatch(setSignOutState())
+                navigate("/");
+            }).catch(error => {alert(error.message)})
+        }
     }
 
     const setUser = (user) => {
