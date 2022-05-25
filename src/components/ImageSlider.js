@@ -27,6 +27,13 @@ const Carousel = styled(Slider)`
             transition: opacity 0.2s ease 0s;
         }
     }
+
+    ul li button {
+        &:before{
+            font-size: 10px;
+            color: gray;
+        }
+    }
 `
 
   return (
