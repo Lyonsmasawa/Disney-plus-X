@@ -169,7 +169,7 @@ const UserImage = styled.img`
         </Logo>
 
         {!userName ? <><Rotate><AcUnit /></Rotate><Rotate><AcUnit /></Rotate><Login onClick={handleAuth}>Log in</Login></> : 
-            <div>
+            <>
                 <NavMenu>
                     <Rotate><AcUnit /></Rotate>
                     <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><Span>HOME</Span></Link>
@@ -181,7 +181,7 @@ const UserImage = styled.img`
                     <Rotate><AcUnit /></Rotate>
                 </NavMenu>
                 <UserImage src={userPhoto} alt={userName} />
-            </div>
+            </>
         }
     </Nav>
    )
