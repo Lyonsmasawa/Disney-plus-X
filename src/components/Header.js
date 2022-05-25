@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import styled from "styled-components"
-import { Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
+import { AcUnit, Add, Hd, HomeOutlined, Search, Star, Tv } from '@material-ui/icons/';
 import { keyframes } from "styled-components";
 import { auth, provider } from "../Firebase";
 import { useSelector, useDispatch } from 'react-redux'
@@ -8,7 +8,7 @@ import { setUserLoginDetails, setSignOutState, selectUserName, selectUserPhoto }
 
 const Nav = styled.nav`
     position: fixed;
-    background-color: rgba(9, 11, 19, .6);
+    background-color: rgba(9, 11, 19, .65);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,7 +163,7 @@ const Rotate = styled.div`
             <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+" />
         </Logo>
 
-        {!username ? <Login onClick={handleAuth}>Log in</Login> : 
+        {!username ? <><Rotate><AcUnit /></Rotate><Rotate><AcUnit /></Rotate><Login onClick={handleAuth}>Log in</Login></> : 
             <div>
                 <NavMenu>
                     <Link to="/home" style={MenuLinks}><HomeOutlined style={MenuIcon} /><Span>HOME</Span></Link>
@@ -172,8 +172,9 @@ const Rotate = styled.div`
                     <Link to="/home" style={MenuLinks}><Star style={MenuIcon} /><Span>ORIGINALS</Span></Link>
                     <Link to="/home" style={MenuLinks}><Hd style={MenuIcon} /><Span>MOVIES</Span></Link>
                     <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
+                    <Rotate><AcUnit /></Rotate>
                 </NavMenu>
-                <Rotate>.</Rotate>
+                
             </div>
         }
     </Nav>
