@@ -139,6 +139,20 @@ const UserImage = styled.img`
   height: 100%;
 `
 
+const SignOut = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-contents: center;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+
+  ${UserImage} {
+      border-radius: 50%;
+  }
+`
+
 const DropDown = styled.div`
     position: absolute;
     top: 48px;
