@@ -5,6 +5,7 @@ import { keyframes } from "styled-components";
 import { auth, provider } from "../Firebase";
 import { useSelector, useDispatch } from 'react-redux'
 import { setUserLoginDetails, setSignOutState, selectUserName, selectUserPhoto } from '../features/user/userSlice.js'
+import { useEffect } from "react";
 
 const Nav = styled.nav`
     position: fixed;
@@ -138,6 +139,20 @@ const UserImage = styled.img`
   height: 100%;
 `
 
+const DropDown = styled.div`
+    position: absolute;
+    top: 48px;
+    right: 0;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    background-color: rgb(19, 19, 19);
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 0px #0063e5;
+    opacity: 0;
+`
+
  const Header = () => {
      const dispatch = useDispatch();
      const navigate = useNavigate();
@@ -148,6 +163,7 @@ const UserImage = styled.img`
     const handleAuth = () => {
         auth.signInWithPopup(provider).then((result) => {
             setUser(result.user);
+            navigate("/home");
             console.log(result.user)
         } ).catch( error => {alert(error.message)})
     }
@@ -180,7 +196,12 @@ const UserImage = styled.img`
                     <Link to="/home" style={MenuLinks}><Tv style={MenuIcon} /><Span>SERIES</Span></Link>
                     <Rotate><AcUnit /></Rotate>
                 </NavMenu>
-                <UserImage src={userPhoto} alt={userName} />
+                <SignOut>
+                    <UserImage src={userPhoto} alt={userName} />
+                    <DropDown>
+                        <span onClick={handleAuth}>Sign out</span>
+                    </DropDown>
+                </SignOut>
             </>
         }
     </Nav>
