@@ -29,11 +29,11 @@ const Logo = styled.a`
     font-size: 0;
     display: inline-block;
 
-    img {
+    img { 
         display: block;
         width: 100%;
     }
-`
+` 
 
 const NavMenu = styled.div`
     display: flex;
