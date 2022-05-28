@@ -34,7 +34,7 @@ const Logo = styled.a`
         width: 100%;
     }
 ` 
-
+  
 const NavMenu = styled.div`
     display: flex;
     align-items: center;
