@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Disney+ Clone.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Preview
+### Landing page
+<img src="preview/landing.png">
 
-In the project directory, you can run:
+### Home page
+<img src="preview/home.png">
 
-### `npm start`
+### Movies
+<img src="preview/moves.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Movie Details
+<img src="preview/details.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Content
 
-### `npm test`
++ [Description](#Description)
++ [Languages](##Languagesused)
++ [Usage](##Tousethetemplate)
++ [Contributing](##Contributing)
++ [Reference](#reference)
++ [Licence](##Licence)
++ [Author](##Author)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
+This is a Disney+ Clone.
 
-### `npm run build`
+## Language used
+This page is made with REACT js.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## To use the template.
+``` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+* Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> A device able to display a webpage.
 
-### `npm run eject`
+> A code editor.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Basic knowledge on HTML, CSS, JS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Clone repository or click on the download code button.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> customize to your liking.
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
+Pull requests are welcome at all times. the more the merrier
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please make sure you update the branches when you make changes on plus a detailed guideline(commits) of changes made.
 
-### Code Splitting
+## Reference
+* Basics of HTML CSS and JS(REACT).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
+[MIT Licence](https://github.com/Lyonsmasawa/Pizza-Haven/blob/0e67c0e303b437261e278a6aba29b06ca59d7261/License.md)
 
-### Analyzing the Bundle Size
+Copyright (c) 2022 Lyons Albert Masawa
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### Making a Progressive Web App
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
+* Lyons Albert Masawa.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Go Back to the top](#Disney+)
