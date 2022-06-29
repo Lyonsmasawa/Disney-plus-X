@@ -81,7 +81,19 @@ const Detail = () => {
 
         @media (max-width: 768px) {
             height: 45px;    
+            padding: 0px 12px;
+            font-size: 12px;
+            margin: 0px 10px 0px 0px;
+
+            img {
+                width: 25px;
+            }
         }
+    `
+
+    const Trailer = styled(Player)`
+        background: rgba(0, 0, 0, 0.3);
+        color: rgb(249, 249, 249);
     `
 
   return (
@@ -103,6 +115,10 @@ const Detail = () => {
                     <img src="/images/play-icon-black.png" alt="" />
                     <span>Play</span>
                 </Player>
+                <Trailer>
+                    <img src="/images/play-icon-white.png" alt="" />
+                    <span>Trailer</span>
+                </Trailer>
             </Controls>
         </ContentMeta>
 
