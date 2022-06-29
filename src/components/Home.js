@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImageSlider from './ImageSlider'
+import NewDisney from './NewDisney'
 import Recommended from './Recommended'
 import Viewers from './Viewers'
 
@@ -33,6 +34,7 @@ export const Home = (props) => {
         <ImageSlider />
         <Viewers />
         <Recommended />
+        <NewDisney />
     </Container>
   )
 }
