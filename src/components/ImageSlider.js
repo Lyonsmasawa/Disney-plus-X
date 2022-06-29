@@ -60,7 +60,7 @@ const Wrap = styled.div`
 
     a{
         border-radius: 4px;
-        box-shadow: 0 0 5px;
+        box-shadow: 0 0 2px;
         cursor: pointer;
         display: block;
         padding: 4px;
@@ -72,7 +72,7 @@ const Wrap = styled.div`
 
         &:hover {
             padding:0;
-            border: 4px solid #0063e5;
+            border: 2px solid #0063e5;
             transition-duration: 300ms;
         }
     }

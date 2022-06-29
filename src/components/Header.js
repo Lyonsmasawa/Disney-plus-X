@@ -46,7 +46,6 @@ const NavMenu = styled.div`
     padding: 0px;
     margin-right: auto;    
     margin-left: 25px;
-    }
 
     @media(max-width: 768px){
         display: none;
@@ -157,7 +156,7 @@ const SignOut = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  justify-contents: center;
+  justify-content: center;
   height: 45px;
   width: 45px;
   cursor: pointer;
