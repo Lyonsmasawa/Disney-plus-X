@@ -53,7 +53,7 @@ const Originals = () => {
 
   return (
     <Container>
-        <h4>Originals for You</h4>
+        <h4>Originals</h4>
         <p>&nbsp;</p>
         <Content>
             <Wrap>
