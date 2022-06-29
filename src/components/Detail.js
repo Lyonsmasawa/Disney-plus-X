@@ -78,6 +78,10 @@ const Detail = () => {
         &:hover {
             background: rgb(198, 198, 198);
         }
+
+        @media (max-width: 768px) {
+            height: 45px;    
+        }
     `
 
   return (
