@@ -1,5 +1,5 @@
 # Disney+ Clone.
- - This is a Disney+ Clone made with React, Redux and Firebase. This project is FrontEnd Heavy.
+ - This is a Disney+ Clone made with React for the design, Redux for state management and Firebase for both authentication and data storage. This project is FrontEnd Heavy. Just a single click to login(Google).
 
 ## Preview
 ### Landing page
