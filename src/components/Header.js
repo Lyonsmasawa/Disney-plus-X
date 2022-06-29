@@ -227,7 +227,7 @@ const SignOut = styled.div`
                     <Rotate><AcUnit /></Rotate>
                 </NavMenu>
                 <SignOut>
-                    <UserImage src={userPhoto} alt={userName} />
+                    <UserImage src={userPhoto} alt="" />
                     <DropDown>
                         <span onClick={handleAuth}>Sign out</span>
                     </DropDown>

@@ -44,7 +44,7 @@ const Viewers = () => {
             height: 100%;
             position: absolute;
             top: 0px;
-            opacity: .03;
+            opacity: .2;
             z-index: 0;
         }
 
