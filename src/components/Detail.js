@@ -1,7 +1,27 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
+import db from '../Firebase'
 
 const Detail = () => {
+    const { id } = useParams();
+    const [detailData, setDetailData] = useState({});
+
+    useEffect(() => {
+        db.collection("movies")
+          .doc(id)
+          .get()
+          .then((doc) => {
+            if (doc.exists) {
+              setDetailData(doc.data());
+            } else {
+              console.log("doesn't exist");
+            }
+          })
+          .catch((error) => {
+            console.log("error: ", error);
+          });
+    }, [id]);
 
     const Container = styled.div`
         position: relative;
@@ -171,39 +191,36 @@ const Detail = () => {
 
   return (
     <Container>
-        <Background>
-            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/223DAE104BE1175F374C4AACAC0EB5B8B0DB9C49839AA2E10085533DDFE07A8E/scale?width=1440&aspectRatio=1.78&format=jpeg" 
-                alt="" 
-            />
-        </Background>
-        
-        <ImageTitle>
-            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/47A6FB38D95B3A5EF5583C9EED0B698ED2992CBA4AC7222DD3269DC92DFA03A6/scale?width=1440&aspectRatio=1.78"
-                alt="" 
-            />
-        </ImageTitle>
-        <ContentMeta>
-            <Controls>
-                <Player>
-                    <img src="/images/play-icon-black.png" alt="" />
-                    <span>Play</span>
-                </Player>
-                <Trailer>
-                    <img src="/images/play-icon-white.png" alt="" />
-                    <span>Trailer</span>
-                </Trailer>
-                <AddList>
-                    <span />
-                    <span />
-                </AddList>
-                <GroupWatch>
-                    <div>
-                    <img src="/images/group-icon.png" alt="" />
-                    </div>
-                </GroupWatch>
-            </Controls>
-        </ContentMeta>
+      <Background>
+        <img alt={detailData.title} src={detailData.backgroundImg} />
+      </Background>
 
+      <ImageTitle>
+        <img alt={detailData.title} src={detailData.titleImg} />
+      </ImageTitle>
+      <ContentMeta>
+        <Controls>
+          <Player>
+            <img src="/images/play-icon-black.png" alt="" />
+            <span>Play</span>
+          </Player>
+          <Trailer>
+            <img src="/images/play-icon-white.png" alt="" />
+            <span>Trailer</span>
+          </Trailer>
+          <AddList>
+            <span />
+            <span />
+          </AddList>
+          <GroupWatch>
+            <div>
+              <img src="/images/group-icon.png" alt="" />
+            </div>
+          </GroupWatch>
+        </Controls>
+        <SubTitle>{detailData.subTitle}</SubTitle>
+        <Description>{detailData.description}</Description>
+      </ContentMeta>
     </Container>
   )
 }
