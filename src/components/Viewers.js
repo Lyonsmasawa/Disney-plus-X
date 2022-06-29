@@ -38,6 +38,13 @@ const Viewers = () => {
             z-index: 1;
             top: 0;
         }
+
+        video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
     `
 
   return (
