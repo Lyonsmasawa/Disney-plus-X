@@ -28,7 +28,7 @@
 This is a Disney+ Clone.
 
 ## Language used
-This page is made with REACT js plus Firebase.
+    - React Js
 
 ## To use the template.
 ``` 
