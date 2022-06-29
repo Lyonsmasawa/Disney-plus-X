@@ -44,7 +44,7 @@ const Viewers = () => {
             height: 100%;
             position: absolute;
             top: 0px;
-            opacity: 1;
+            opacity: .03;
             z-index: 0;
         }
 
@@ -54,7 +54,7 @@ const Viewers = () => {
             border-color: rgba(249, 249, 249, 0.8);
 
             video {
-                opacity: 0;
+                opacity: 1;
             }
         }
     `

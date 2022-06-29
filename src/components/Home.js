@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImageSlider from './ImageSlider'
+import Recommended from './Recommended'
 import Viewers from './Viewers'
 
 const Container = styled.main`
@@ -31,6 +32,7 @@ export const Home = (props) => {
     <Container>
         <ImageSlider />
         <Viewers />
+        <Recommended />
     </Container>
   )
 }
