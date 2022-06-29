@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import ImageSlider from './ImageSlider'
 import NewDisney from './NewDisney'
@@ -6,7 +6,6 @@ import Originals from './Originals'
 import Recommended from './Recommended'
 import Trending from './Trending'
 import Viewers from './Viewers'
-import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import db from '../Firebase'
 import { setMovies } from '../features/movie/movieSlice'
@@ -34,7 +33,7 @@ const Container = styled.main`
     }
 `
 
-export const Home = (props) => {
+const Home = (props) => {
   const dispatch = useDispatch();
   const userName = useSelector(selectUserName);
   let recommends  = []

@@ -10,7 +10,7 @@ const initialState = {
 const movieSlice = createSlice({
     name: 'movie',
     initialState,
-    reducer: {
+    reducers: {
         setMovies: (state, action) => {
             state.recommended = action.payload.recommended;
             state.newDisney = action.payload.newDisney;
