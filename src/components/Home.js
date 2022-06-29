@@ -4,6 +4,7 @@ import ImageSlider from './ImageSlider'
 import NewDisney from './NewDisney'
 import Originals from './Originals'
 import Recommended from './Recommended'
+import Trending from './Trending'
 import Viewers from './Viewers'
 
 const Container = styled.main`
@@ -37,6 +38,7 @@ export const Home = (props) => {
         <Recommended />
         <NewDisney />
         <Originals />
+        <Trending />
     </Container>
   )
 }
