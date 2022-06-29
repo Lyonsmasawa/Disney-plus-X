@@ -53,7 +53,7 @@ const NewDisney = () => {
 
   return (
     <Container>
-        <h4>New to Disney+</h4>
+        <h4>New to Disney+</h4> 
         <p>&nbsp;</p>
         <Content>
             <Wrap>
