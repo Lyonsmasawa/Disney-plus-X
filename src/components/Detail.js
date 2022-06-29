@@ -48,6 +48,38 @@ const Detail = () => {
         }
     `
 
+    const ContentMeta = styled.div`
+        max-width: 874px;
+    `
+
+    const Controls = styled.div`
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 24px 0px;
+        min-height: 56px;
+    `
+
+    const Player = styled.button`
+        font-size: 15px;
+        margin: 0px 22px 0px 0px;
+        padding: 0px 24px;
+        height: 54px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+
+        img {
+            width: 32px;
+        }
+
+        &:hover {
+            background: rgb(198, 198, 198);
+        }
+    `
+
   return (
     <Container>
         <Background>
@@ -61,6 +93,14 @@ const Detail = () => {
                 alt="" 
             />
         </ImageTitle>
+        <ContentMeta>
+            <Controls>
+                <Player>
+                    <img src="/images/play-icon-black.png" alt="" />
+                    <span>Play</span>
+                </Player>
+            </Controls>
+        </ContentMeta>
 
     </Container>
   )
