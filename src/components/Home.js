@@ -74,7 +74,7 @@ export const Home = (props) => {
       original: original,
       trending: trending,
     }))
-  })
+  }, [ userName ])
   
 
   return (
