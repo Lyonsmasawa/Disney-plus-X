@@ -37,44 +37,48 @@ const Container = styled.main`
 export const Home = (props) => {
   const dispatch = useDispatch();
   const userName = useSelector(selectUserName);
-  let recommend  = []
-  let newDisney = []
-  let original = []
+  let recommends  = []
+  let newDisneys = []
+  let originals = []
   let trending = []
 
   useEffect(() => {
-    db.collection('movies').onSnapshot((snapshot) => {
+    console.log("hello");
+    db.collection("movies").onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
+        console.log(recommends);
         switch (doc.data().type) {
-          case 'recommend':
-            recommend.push({id: doc.id, ...doc.data})
+          case "recommend":
+            recommends = [...recommends, { id: doc.id, ...doc.data() }];
             break;
 
-          case 'new':
-            newDisney.push({id: doc.id, ...doc.data})
-            break;
-          
-          case 'original':
-            original.push({id: doc.id, ...doc.data})
+          case "new":
+            newDisneys = [...newDisneys, { id: doc.id, ...doc.data() }];
             break;
 
-          case 'trending':
-            trending.push({id: doc.id, ...doc.data})
+          case "original":
+            originals = [...originals, { id: doc.id, ...doc.data() }];
+            break;
+
+          case "trending":
+            trending = [...trending, { id: doc.id, ...doc.data() }];
             break;
 
           default:
-            console.log("hey")
+            console.log('hey')
         }
-      })
-    })
+      });
 
-    dispatch(setMovies({
-      recommended: recommend,
-      newDisney: newDisney,
-      original: original,
-      trending: trending,
-    }))
-  }, [ userName ])
+      dispatch(
+        setMovies({
+          recommended: recommends,
+          newDisney: newDisneys,
+          original: originals,
+          trending: trending,
+        })
+      );
+    });
+  }, [userName]);
   
 
   return (

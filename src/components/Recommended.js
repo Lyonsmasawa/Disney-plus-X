@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { selectRecommended } from '../features/movie/movieSlice'
 
-const Recommended = () => {
+const Recommended = ( props ) => {
      
     const Container = styled.div`
         padding: 0 0 26px;
@@ -56,26 +58,7 @@ const Recommended = () => {
         <h4>Recommended for You</h4>
         <p>&nbsp;</p>
         <Content>
-            <Wrap>
-                <Link to='/'>
-                    <img src="https://ychef.files.bbci.co.uk/976x549/p02rr4bh.jpg" alt="" />
-                </Link>
-            </Wrap>
-            <Wrap>
-                <Link to='/'>
-                    <img src="https://ychef.files.bbci.co.uk/976x549/p02rr4bh.jpg" alt="" />
-                </Link>
-            </Wrap>
-            <Wrap>
-                <Link to='/'>
-                    <img src="https://ychef.files.bbci.co.uk/976x549/p02rr4bh.jpg" alt="" />
-                </Link>
-            </Wrap>
-            <Wrap>
-                <Link to='/'>
-                    <img src="https://ychef.files.bbci.co.uk/976x549/p02rr4bh.jpg" alt="" />
-                </Link>
-            </Wrap>
+            
         </Content>
     </Container>
   )
