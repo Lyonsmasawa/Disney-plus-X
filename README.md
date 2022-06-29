@@ -1,5 +1,5 @@
 # Disney+ Clone.
-
+ - This is a Disney+ Clone made with React, Redux and Firebase. This project is FrontEnd Heavy.
 
 ## Preview
 ### Landing page
@@ -28,7 +28,7 @@
 This is a Disney+ Clone.
 
 ## Language used
-This page is made with REACT js.
+This page is made with REACT js plus Firebase.
 
 ## To use the template.
 ``` 
