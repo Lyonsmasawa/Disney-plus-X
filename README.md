@@ -40,7 +40,7 @@ This is a Disney+ Clone.
 
 > A code editor.
 
-> Basic knowledge on HTML, CSS, JS.
+> Basic knowledge on HTML, CSS, ReactJs.
 
 * Installation
 
