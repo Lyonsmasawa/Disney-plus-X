@@ -46,7 +46,7 @@ This is a Disney+ Clone.
 
 > Clone repository or click on the download code button.
 
-> customize to your liking.
+> Customize to your liking.
 
 ```
 
