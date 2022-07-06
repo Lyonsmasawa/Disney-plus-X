@@ -42,13 +42,13 @@ This is a Disney+ Clone.
 
 > Basic knowledge on HTML, CSS, ReactJs.
 
-* Installation
+* Installation 
 
-> Clone repository or click on the download code button.
+> Clone repository or click on the download code button. 
 
-> Customize to your liking. 
+> Customize to your liking.
 
-```
+``` 
 
 ## Contributing
 Pull requests are welcome at all times. the more the merrier
@@ -56,7 +56,7 @@ Pull requests are welcome at all times. the more the merrier
 Please make sure you update the branches when you make changes on plus a detailed guideline(commits) of changes made.
 
 ## Reference
-* Basics of HTML CSS and JS(REACT).
+* Basics of HTML, CSS and JS(REACT).
 
 ## License
 [MIT Licence](https://github.com/Lyonsmasawa/Pizza-Haven/blob/0e67c0e303b437261e278a6aba29b06ca59d7261/License.md)
